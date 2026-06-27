@@ -50,8 +50,7 @@ st.markdown("""<style>
 # ── Load Data & Model ─────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    return pd.read_csv(os.path.join(BASE_DIR, "data/processed/clean_data.csv"))
-
+    return pd.read_csv(os.path.join(BASE_DIR, "data/processed/clean_data_sample.csv"))
 @st.cache_resource
 def load_model():
     return joblib.load(os.path.join(BASE_DIR, "models/lgbm_model.pkl"))
