@@ -969,8 +969,4 @@ elif page == "🎯 Retention Plan":
                     <div class="summary-stat"><div class="num" style="color:{WARNING}">{soon_count}</div><div class="lbl">Soon</div></div>
                     <div class="summary-stat"><div class="num" style="color:{SUCCESS}">{normal_count}</div><div class="lbl">Normal</div></div>
                     <div class="summary-note">{len(actions)} action{"s" if len(actions) != 1 else ""} recommended · Start with URGENT items first</div>
-<<<<<<< HEAD
-                </div>""", unsafe_allow_html=True)
-=======
-                </div>""", unsafe_allow_html=True)
->>>>>>> 546a480 (Fix navbar/CSS rendering issue and update team name)
+                    </div>""", unsafe_allow_html=True)
