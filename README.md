@@ -75,7 +75,7 @@ customer-churn-project/
 | Data Scientist | Model building, evaluation, selection |
 | Data Analyst   | EDA, visualizations, insights         |
 | SQL Engineer   | Database design, queries, analysis    |
-| BI Developer   | Streamlit dashboard, prediction tool  |
+| BI Developer   | Streamlit & Power BI dashboards, prediction tool  |
 
 ---
 
