@@ -3,6 +3,8 @@
 A complete end-to-end Machine Learning project that predicts customer churn for a telecom company using real-world data of 999,999 customers.
 
 ---
+## Live Demo 
+https://customer-churn-prediction-pipeline.streamlit.app/
 
 ## 📁 Project Structure
 
