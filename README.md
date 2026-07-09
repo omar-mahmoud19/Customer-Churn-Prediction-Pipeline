@@ -463,10 +463,19 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## 🔮 Future Improvements
+# 🚀 Future Improvements
 
-- 📡 **MLflow Tracking** — Expand experiment tracking to cover full hyperparameter search history, model versioning, and automated model registry promotion.
-- ⚡ **Real-Time Prediction** — Extend the current scoring interface into a lightweight REST API for real-time, event-driven churn scoring integrated directly into CRM workflows.
+🐳 **Docker Deployment** — Containerize the entire pipeline to ensure consistent environments, simplify deployment, and improve scalability across different platforms.
+
+📡 **MLflow Tracking** — Integrate MLflow to track experiments, compare model performance, manage model versions, and streamline the machine learning lifecycle.
+
+⚡ **FastAPI REST API** — Expose the trained LightGBM model through a high-performance REST API, enabling seamless integration with external applications and services.
+
+🔄 **Airflow Automation** — Automate the end-to-end workflow, including data ingestion, preprocessing, model retraining, and deployment using Apache Airflow.
+
+☁️ **Azure Cloud Deployment** — Deploy the application and machine learning pipeline on Microsoft Azure to provide scalable, secure, and cloud-native infrastructure.
+
+🚀 **CI/CD Pipeline** — Implement Continuous Integration and Continuous Deployment using GitHub Actions to automate testing, model validation, and application deployment.
 
 ---
 
