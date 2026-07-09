@@ -223,34 +223,51 @@ customer-churn-prediction-pipeline/
 │   ├── roc_curve.png
 │   ├── confusion_matrix.png
 │   ├── sql_analysis.png
-│   └── powerbi_dashboard.png
-│
-├── screenshots/                 # Application screenshots
+│   ├── powerbi_dashboard.png
 │   ├── home.png
 │   ├── prediction.png
 │   └── charts.png
 │
-├── data/                        # Raw and processed datasets
-│   ├── raw/
-│   └── processed/
+|── data/
+│   ├── raw/                        # Original dataset (do not modify)
+│   │   └── customer_churn.csv
+│   └── processed/                  # Cleaned & encoded dataset
+│       └── clean_data.csv
 │
-├── notebooks/                   # EDA and experimentation notebooks
+├── notebooks/
+│   ├── 01_data_exploration.ipynb   # Initial data exploration
+│   ├── 02_data_preprocessing.ipynb # Cleaning, encoding, scaling
+│   ├── 03_model_training.ipynb     # Model building & comparison
+│   ├── 04_model_evaluation.ipynb   # Metrics, confusion matrix
+│   └── 05_sql_analysis.ipynb       # SQL queries & insights
 │
-├── sql/                         # SQL Server analytical queries
+├── database/
+│   ├── schema.sql                  # Database schema
+│   ├── load_data.py                # Load CSV to SQL Server
+│   └── queries/
+│       ├── 01_churn_rate.sql
+│       ├── 02_churn_by_contract.sql
+│       ├── 03_high_risk_customers.sql
+│       ├── 04_churn_by_charges.sql
+│       └── 05_churn_by_tenure.sql
 │
-├── src/                         # Core pipeline source code
-│   ├── data_cleaning.py
-│   ├── feature_engineering.py
-│   ├── train_model.py
-│   ├── evaluate_model.py
-│   └── predict.py
+├── models/
+│   ├── lgbm_model.pkl              # Trained LightGBM model
+│   └── scaler/
+│       └── scaler.pk1              # Fitted StandardScaler
 │
-├── dashboard/                   # Streamlit application
-│   └── app.py
+├── app/
+│   └── streamlit_app.py            # Interactive dashboard
+│
+├── reports/
+│   ├── data_engineering_report.pdf
+│   ├── data_science_report.pdf
+│   ├── eda_report.pdf
+│   ├── sql_analysis_report.pdf
+│   └── dashboards_report.pdf
 │
 ├── powerbi/                     # Power BI report files
 │
-├── models/                      # Serialized trained models
 │
 ├── requirements.txt
 ├── README.md
@@ -340,9 +357,9 @@ Multiple candidate algorithms were trained and benchmarked, with **LightGBM** se
 An interactive **Streamlit** application allows business users to explore churn drivers and score individual customers in real time.
 
 <div align="center">
-<img src="screenshots/home.png" alt="Dashboard Home" width="85%" />
+<img src="assets/dashboard.png" alt="Dashboard Home" width="85%" />
 <br/><br/>
-<img src="screenshots/prediction.png" alt="Real-Time Prediction" width="85%" />
+<img src="assets/prediction.png" alt="Real-Time Prediction" width="85%" />
 </div>
 
 **🔗 Live App:** [customer-churn-prediction-pipeline.streamlit.app](https://customer-churn-prediction-pipeline.streamlit.app/)
@@ -421,33 +438,27 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+## 🚀 How to Run
 
-**Run the full training pipeline:**
+### 1. Prepare data
 
 ```bash
-python src/data_cleaning.py
-python src/feature_engineering.py
-python src/train_model.py
-python src/evaluate_model.py
+# Run preprocessing notebook
+jupyter notebook notebooks/02_data_preprocessing.ipynb
 ```
 
-**Launch the Streamlit dashboard locally:**
+### 2. Train model
 
 ```bash
-streamlit run dashboard/app.py
+# Run training notebook
+jupyter notebook notebooks/03_model_training.ipynb
 ```
 
-**Track experiments with MLflow:**
+### 3. Launch dashboard
 
 ```bash
-mlflow ui
-```
-
-**Run a real-time prediction:**
-
-```bash
-python src/predict.py --input path/to/customer_record.json
+cd D:\project
+streamlit run app/streamlit_app.py
 ```
 
 ---
