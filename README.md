@@ -357,7 +357,7 @@ Multiple candidate algorithms were trained and benchmarked, with **LightGBM** se
 An interactive **Streamlit** application allows business users to explore churn drivers and score individual customers in real time.
 
 <div align="center">
-<img src="assets/dashboard.png" alt="Dashboard Home" width="85%" />
+<img src="assets/home.png" alt="Dashboard Home" width="85%" />
 <br/><br/>
 <img src="assets/prediction.png" alt="Real-Time Prediction" width="85%" />
 </div>
