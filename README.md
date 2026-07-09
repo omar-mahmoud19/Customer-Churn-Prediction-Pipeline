@@ -293,7 +293,7 @@ The data engineering stage transforms raw, inconsistent telecom records into a c
 Extensive EDA was performed to understand churn behavior across demographic, contractual, and usage dimensions — surfacing correlations between tenure, contract type, monthly charges, and churn likelihood that directly informed feature engineering decisions.
 
 <div align="center">
-<img src="screenshots/charts.png" alt="EDA Charts" width="85%" />
+<img src="assets/charts.png" alt="EDA Charts" width="85%" />
 </div>
 
 ---
