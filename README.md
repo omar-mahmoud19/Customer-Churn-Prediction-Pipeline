@@ -408,7 +408,6 @@ The final model prioritizes **recall over precision**, reflecting the business r
 | **Web App** | Streamlit |
 | **BI & Reporting** | Power BI |
 | **Visualization** | Matplotlib |
-| **Experiment Tracking** | MLflow |
 
 </div>
 
