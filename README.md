@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="assets/logo.png" alt="Logo" width="120" />
+<img src="assets/logo.png" alt="Logo" width="200" />
 
 <h1>📊 Customer Churn Prediction Pipeline</h1>
 
