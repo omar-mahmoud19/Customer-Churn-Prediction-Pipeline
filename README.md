@@ -46,6 +46,13 @@
 </a>
 
 <br/><br/>
+<br/>
+
+<a href="https://customer-churn-prediction-pipeline.lovable.app/#top">
+  <img src="https://img.shields.io/badge/🚀_PROJECT-WEB-047954?style=for-the-badge&logoColor=white" />
+</a>
+
+<br/><br/>
 
 <img src="assets/dashboard.gif" alt="Dashboard Demo" width="90%" />
 
